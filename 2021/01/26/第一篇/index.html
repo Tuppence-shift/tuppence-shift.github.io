@@ -9,7 +9,7 @@
     
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <title>
-    MY NEW POST |  Zug&#39;s Bizzare Adventure
+    第一篇 |  Zug&#39;s Bizzare Adventure
   </title>
   <meta name="generator" content="hexo-theme-ayer">
   
@@ -44,7 +44,7 @@
     <main class="content on">
       <section class="outer">
   <article
-  id="post-MY-NEW-POST"
+  id="post-第一篇"
   class="article article-type-post"
   itemscope
   itemprop="blogPost"
@@ -55,22 +55,22 @@
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  MY NEW POST
+  第一篇
 </h1>
  
 
     </header>
      
     <div class="article-meta">
-      <a href="/2021/01/25/MY-NEW-POST/" class="article-date">
-  <time datetime="2021-01-25T08:52:53.000Z" itemprop="datePublished">2021-01-25</time>
+      <a href="/2021/01/26/%E7%AC%AC%E4%B8%80%E7%AF%87/" class="article-date">
+  <time datetime="2021-01-25T16:01:44.000Z" itemprop="datePublished">2021-01-26</time>
 </a>   
 <div class="word_count">
     <span class="post-time">
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> Word count:</span>
-            <span class="post-count">24</span>
+            <span class="post-count">287</span>
         </span>
     </span>
 
@@ -86,24 +86,22 @@
  
     </div>
       
-    <div class="tocbot"></div>
-
 
 
 
   
     <div class="article-entry" itemprop="articleBody">
        
-  <h1 id="This-is-a-test-post"><a href="#This-is-a-test-post" class="headerlink" title="This is a test post"></a>This is a test post</h1><p>This is a test post</p>
-<ul>
-<li>This is a test post<ul>
-<li>This is a test post<ul>
-<li>This is a test post</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+  <p>今天花了一天的功夫跟着教程从0到1搭建了自己的博客。但绝大部分的时间都耗在了一个非常“愚蠢”的问题上：hexo deploy能够成功运行，但网页怎么也不显示部署的内容……</p>
+<p>自己胡乱捣鼓了一通，居然还发现了原因所在：</p>
+<p>将hexo生成的页面部署到github pages site上需要把hexo根目录里_config.yml文件中最后四行改成</p>
+<p>deploy:<br>  type: git<br>  repo: <a href="mailto:&#x67;&#x69;&#116;&#64;&#x67;&#105;&#x74;&#x68;&#x75;&#98;&#x2e;&#99;&#x6f;&#x6d;">&#x67;&#x69;&#116;&#64;&#x67;&#105;&#x74;&#x68;&#x75;&#98;&#x2e;&#99;&#x6f;&#x6d;</a>:YourUserName/YourUserName.github.io.git<br>  branch: master</p>
+<p>问题出在最后一行。许多教程给的branch是master，然而我的github pages site默认是从main这个branch建立的，所以一直显示main里的内容。</p>
+<p>那问题就好办了。进入github page的repository，点settings，往下拉找到github pages，将branch改为master</p>
+<p>![Image 1](第一篇/Image 1.png)</p>
+<p>然后问题就完美解决了！</p>
+<p>其实问题很多时候就隐藏在你根本不会怀疑出问题的地方。也许正是因为你不会彻底的怀疑，错误才得以一直存在。</p>
+<p>明天再美化一下界面，keep going!</p>
  
       <!-- reward -->
       
@@ -174,25 +172,17 @@
     <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://zugliu.com/2021/01/25/MY-NEW-POST/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://zugliu.com/2021/01/26/%E7%AC%AC%E4%B8%80%E7%AF%87/" alt="微信分享二维码">
     </div>
 </div>
 
 <div id="share-mask"></div>  
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mindroaming/" rel="tag">mindroaming</a></li></ul>
+
     </footer>
   </div>
 
    
-  <nav class="article-nav">
-    
-    
-      <a href="/2021/01/25/hello-world/" class="article-nav-link">
-        <strong class="article-nav-caption">下一篇</strong>
-        <div class="article-nav-title">Hello World</div>
-      </a>
-    
-  </nav>
-
    
 <!-- valine评论 -->
 <div id="vcomments-box">
@@ -333,7 +323,7 @@
     </li>
     
     <li class="nav-item">
-      <a class="nav-item-link" href="/tags/%E6%97%85%E8%A1%8C/">旅行</a>
+      <a class="nav-item-link" href="/tags/mindroaming/">MindRoaming</a>
     </li>
     
     <li class="nav-item">
