@@ -95,7 +95,7 @@
   <p>今天花了一天的功夫跟着教程从0到1搭建了自己的博客。但绝大部分的时间都耗在了一个非常“愚蠢”的问题上：hexo deploy能够成功运行，但网页怎么也不显示部署的内容……</p>
 <p>自己胡乱捣鼓了一通，居然还发现了原因所在：</p>
 <p>将hexo生成的页面部署到github pages site上需要把hexo根目录里_config.yml文件中最后四行改成</p>
-<p>deploy:<br>  type: git<br>  repo: <a href="mailto:&#103;&#105;&#116;&#x40;&#x67;&#105;&#x74;&#104;&#x75;&#98;&#x2e;&#99;&#x6f;&#109;">&#103;&#105;&#116;&#x40;&#x67;&#105;&#x74;&#104;&#x75;&#98;&#x2e;&#99;&#x6f;&#109;</a>:YourUserName/YourUserName.github.io.git<br>  branch: master</p>
+<p>deploy:<br>  type: git<br>  repo: <a href="mailto:&#103;&#x69;&#x74;&#64;&#x67;&#x69;&#116;&#x68;&#117;&#x62;&#46;&#x63;&#x6f;&#109;">&#103;&#x69;&#x74;&#64;&#x67;&#x69;&#116;&#x68;&#117;&#x62;&#46;&#x63;&#x6f;&#109;</a>:YourUserName/YourUserName.github.io.git<br>  branch: master</p>
 <p>问题出在最后一行。许多教程给的branch是master，然而我的github pages site默认是从main这个branch建立的，所以一直显示main里的内容。</p>
 <p>那问题就好办了。进入github page的repository，点settings，往下拉找到github pages，将branch改为master</p>
 <p>![Image 1](第一篇/Image 1.png)</p>
@@ -185,11 +185,11 @@
    
   <nav class="article-nav">
     
-      <a href="/2021/01/27/%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87/" class="article-nav-link">
+      <a href="/2021/01/27/PicTest/" class="article-nav-link">
         <strong class="article-nav-caption">上一篇</strong>
         <div class="article-nav-title">
           
-            上传图片
+            博客上传图片的问题
           
         </div>
       </a>
@@ -256,7 +256,7 @@
     <ul>
       <li>
         Copyrights &copy;
-        2015-2021
+        2021
         <i class="ri-heart-fill heart_icon"></i> Zug Liu
       </li>
     </ul>

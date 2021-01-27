@@ -156,7 +156,7 @@
     
     
     <article
-  id="post-上传图片"
+  id="post-PicTest"
   class="article article-type-post"
   itemscope
   itemprop="blogPost"
@@ -167,22 +167,49 @@
     <header class="article-header">
        
 <h2 itemprop="name">
-  <a class="article-title" href="/2021/01/27/%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87/"
-    >上传图片</a> 
+  <a class="article-title" href="/2021/01/27/PicTest/"
+    >博客上传图片的问题</a> 
 </h2>
  
 
     </header>
      
     <div class="article-meta">
-      <a href="/2021/01/27/%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87/" class="article-date">
-  <time datetime="2021-01-27T10:14:08.000Z" itemprop="datePublished">2021-01-27</time>
-</a>    
+      <a href="/2021/01/27/PicTest/" class="article-date">
+  <time datetime="2021-01-27T14:08:38.000Z" itemprop="datePublished">2021-01-27</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/technicability/">technicability</a>
+  </div>
+   
     </div>
       
     <div class="article-entry" itemprop="articleBody">
        
-  <h1 id="图片上传测试"><a href="#图片上传测试" class="headerlink" title="图片上传测试"></a>图片上传测试</h1><p><img src="/01/27/%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87/wallhaven-vgpo65.jpg" alt="wallhaven-vgpo65"></p>
+  <p>搭建完博客，自然是要开始写文章。然而问题马上就又出现了：</p>
+<p>hexo插入图片的语法与markdown语法不一致。</p>
+<p>我需要能方便地用markdown语法插入图片，并且能预览图片。</p>
+<p>那就开始百度/Google吧。</p>
+<p>一通操作下来，还是hexo的文档给的提示最有效：<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/asset-folders">https://hexo.io/zh-cn/docs/asset-folders</a></p>
+<ol>
+<li><p>首先安装<a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo-renderer-marked">hexo-renderer-marked</a>插件。</p>
+</li>
+<li><p>然后将_config.yml中相关行改成：</p>
+</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">post_asset_folder: true</span><br><span class="line">marked:</span><br><span class="line">  prependRoot: true</span><br><span class="line">  postAsset: true</span><br></pre></td></tr></table></figure>
+<p>​    这样，在创建新的post的时候，就会有一个同名文件夹建立。先将要插入的图片放到文件夹，然后再在md文件中插入图片，然后插件会在渲染后把markdown的路径转换为相应的post的路径。</p>
+<p>通过对typora的设置，我们还可以再简化一下操作：</p>
+<p>打开typora -&gt; 文件 -&gt; 偏好设置 -&gt; 图像， 然后按如下设置</p>
+<p><img src="/2021/01/27/PicTest/image-20210127230915504.png" alt="image-20210127230915504"></p>
+<p>这样，不管你是从本地还是网络插入的图片，只要插入了图片，typora就会把图片复制到我们新建post的同名文件夹里。所以我们只需要在md文件里插入图片就好了，不用再把图片手动复制到同名文件夹里了。</p>
+<p>接下来还要对博客进行一些调整：</p>
+<ul>
+<li>增加评论模块</li>
+<li>使博客能在google和百度上被搜索到</li>
+<li>整理文章的分类的标签</li>
+<li>其他的美化</li>
+</ul>
  
       <!-- reward -->
       
@@ -193,7 +220,7 @@
     
     <footer class="article-footer">
        
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mindroaming/" rel="tag">mindroaming</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/technicability/" rel="tag">technicability</a></li></ul>
 
     </footer>
   </div>
@@ -234,7 +261,7 @@
   <p>今天花了一天的功夫跟着教程从0到1搭建了自己的博客。但绝大部分的时间都耗在了一个非常“愚蠢”的问题上：hexo deploy能够成功运行，但网页怎么也不显示部署的内容……</p>
 <p>自己胡乱捣鼓了一通，居然还发现了原因所在：</p>
 <p>将hexo生成的页面部署到github pages site上需要把hexo根目录里_config.yml文件中最后四行改成</p>
-<p>deploy:<br>  type: git<br>  repo: <a href="mailto:&#103;&#105;&#116;&#x40;&#x67;&#105;&#x74;&#104;&#x75;&#98;&#x2e;&#99;&#x6f;&#109;">&#103;&#105;&#116;&#x40;&#x67;&#105;&#x74;&#104;&#x75;&#98;&#x2e;&#99;&#x6f;&#109;</a>:YourUserName/YourUserName.github.io.git<br>  branch: master</p>
+<p>deploy:<br>  type: git<br>  repo: <a href="mailto:&#103;&#x69;&#x74;&#64;&#x67;&#x69;&#116;&#x68;&#117;&#x62;&#46;&#x63;&#x6f;&#109;">&#103;&#x69;&#x74;&#64;&#x67;&#x69;&#116;&#x68;&#117;&#x62;&#46;&#x63;&#x6f;&#109;</a>:YourUserName/YourUserName.github.io.git<br>  branch: master</p>
 <p>问题出在最后一行。许多教程给的branch是master，然而我的github pages site默认是从main这个branch建立的，所以一直显示main里的内容。</p>
 <p>那问题就好办了。进入github page的repository，点settings，往下拉找到github pages，将branch改为master</p>
 <p>![Image 1](第一篇/Image 1.png)</p>
@@ -274,7 +301,7 @@
     <ul>
       <li>
         Copyrights &copy;
-        2015-2021
+        2021
         <i class="ri-heart-fill heart_icon"></i> Zug Liu
       </li>
     </ul>

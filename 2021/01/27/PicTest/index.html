@@ -9,7 +9,7 @@
     
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <title>
-    上传图片 |  Zug&#39;s Bizzare Adventure
+    博客上传图片的问题 |  Zug&#39;s Bizzare Adventure
   </title>
   <meta name="generator" content="hexo-theme-ayer">
   
@@ -44,7 +44,7 @@
     <main class="content on">
       <section class="outer">
   <article
-  id="post-上传图片"
+  id="post-PicTest"
   class="article article-type-post"
   itemscope
   itemprop="blogPost"
@@ -55,22 +55,26 @@
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  上传图片
+  博客上传图片的问题
 </h1>
  
 
     </header>
      
     <div class="article-meta">
-      <a href="/2021/01/27/%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87/" class="article-date">
-  <time datetime="2021-01-27T10:14:08.000Z" itemprop="datePublished">2021-01-27</time>
-</a>   
+      <a href="/2021/01/27/PicTest/" class="article-date">
+  <time datetime="2021-01-27T14:08:38.000Z" itemprop="datePublished">2021-01-27</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/technicability/">technicability</a>
+  </div>
+  
 <div class="word_count">
     <span class="post-time">
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> Word count:</span>
-            <span class="post-count">6</span>
+            <span class="post-count">364</span>
         </span>
     </span>
 
@@ -86,15 +90,36 @@
  
     </div>
       
-    <div class="tocbot"></div>
-
 
 
 
   
     <div class="article-entry" itemprop="articleBody">
        
-  <h1 id="图片上传测试"><a href="#图片上传测试" class="headerlink" title="图片上传测试"></a>图片上传测试</h1><p><img src="/01/27/%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87/wallhaven-vgpo65.jpg" alt="wallhaven-vgpo65"></p>
+  <p>搭建完博客，自然是要开始写文章。然而问题马上就又出现了：</p>
+<p>hexo插入图片的语法与markdown语法不一致。</p>
+<p>我需要能方便地用markdown语法插入图片，并且能预览图片。</p>
+<p>那就开始百度/Google吧。</p>
+<p>一通操作下来，还是hexo的文档给的提示最有效：<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/asset-folders">https://hexo.io/zh-cn/docs/asset-folders</a></p>
+<ol>
+<li><p>首先安装<a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo-renderer-marked">hexo-renderer-marked</a>插件。</p>
+</li>
+<li><p>然后将_config.yml中相关行改成：</p>
+</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">post_asset_folder: true</span><br><span class="line">marked:</span><br><span class="line">  prependRoot: true</span><br><span class="line">  postAsset: true</span><br></pre></td></tr></table></figure>
+<p>​    这样，在创建新的post的时候，就会有一个同名文件夹建立。先将要插入的图片放到文件夹，然后再在md文件中插入图片，然后插件会在渲染后把markdown的路径转换为相应的post的路径。</p>
+<p>通过对typora的设置，我们还可以再简化一下操作：</p>
+<p>打开typora -&gt; 文件 -&gt; 偏好设置 -&gt; 图像， 然后按如下设置</p>
+<p><img src="/2021/01/27/PicTest/image-20210127230915504.png" alt="image-20210127230915504"></p>
+<p>这样，不管你是从本地还是网络插入的图片，只要插入了图片，typora就会把图片复制到我们新建post的同名文件夹里。所以我们只需要在md文件里插入图片就好了，不用再把图片手动复制到同名文件夹里了。</p>
+<p>接下来还要对博客进行一些调整：</p>
+<ul>
+<li>增加评论模块</li>
+<li>使博客能在google和百度上被搜索到</li>
+<li>整理文章的分类的标签</li>
+<li>其他的美化</li>
+</ul>
  
       <!-- reward -->
       
@@ -165,12 +190,12 @@
     <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://zugliu.com/2021/01/27/%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://zugliu.com/2021/01/27/PicTest/" alt="微信分享二维码">
     </div>
 </div>
 
 <div id="share-mask"></div>  
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mindroaming/" rel="tag">mindroaming</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/technicability/" rel="tag">technicability</a></li></ul>
 
     </footer>
   </div>
@@ -245,7 +270,7 @@
     <ul>
       <li>
         Copyrights &copy;
-        2015-2021
+        2021
         <i class="ri-heart-fill heart_icon"></i> Zug Liu
       </li>
     </ul>
