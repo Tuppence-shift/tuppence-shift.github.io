@@ -156,6 +156,55 @@
     
     
     <article
+  id="post-上传图片"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2021/01/27/%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87/"
+    >上传图片</a> 
+</h2>
+ 
+
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2021/01/27/%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87/" class="article-date">
+  <time datetime="2021-01-27T10:14:08.000Z" itemprop="datePublished">2021-01-27</time>
+</a>    
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h1 id="图片上传测试"><a href="#图片上传测试" class="headerlink" title="图片上传测试"></a>图片上传测试</h1><p><img src="/01/27/%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87/wallhaven-vgpo65.jpg" alt="wallhaven-vgpo65"></p>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mindroaming/" rel="tag">mindroaming</a></li></ul>
+
+    </footer>
+  </div>
+
+    
+ 
+    
+</article>
+
+    
+    <article
   id="post-第一篇"
   class="article article-type-post"
   itemscope
@@ -185,7 +234,7 @@
   <p>今天花了一天的功夫跟着教程从0到1搭建了自己的博客。但绝大部分的时间都耗在了一个非常“愚蠢”的问题上：hexo deploy能够成功运行，但网页怎么也不显示部署的内容……</p>
 <p>自己胡乱捣鼓了一通，居然还发现了原因所在：</p>
 <p>将hexo生成的页面部署到github pages site上需要把hexo根目录里_config.yml文件中最后四行改成</p>
-<p>deploy:<br>  type: git<br>  repo: <a href="mailto:&#x67;&#x69;&#116;&#64;&#x67;&#105;&#x74;&#x68;&#x75;&#98;&#x2e;&#99;&#x6f;&#x6d;">&#x67;&#x69;&#116;&#64;&#x67;&#105;&#x74;&#x68;&#x75;&#98;&#x2e;&#99;&#x6f;&#x6d;</a>:YourUserName/YourUserName.github.io.git<br>  branch: master</p>
+<p>deploy:<br>  type: git<br>  repo: <a href="mailto:&#103;&#105;&#116;&#x40;&#x67;&#105;&#x74;&#104;&#x75;&#98;&#x2e;&#99;&#x6f;&#109;">&#103;&#105;&#116;&#x40;&#x67;&#105;&#x74;&#104;&#x75;&#98;&#x2e;&#99;&#x6f;&#109;</a>:YourUserName/YourUserName.github.io.git<br>  branch: master</p>
 <p>问题出在最后一行。许多教程给的branch是master，然而我的github pages site默认是从main这个branch建立的，所以一直显示main里的内容。</p>
 <p>那问题就好办了。进入github page的repository，点settings，往下拉找到github pages，将branch改为master</p>
 <p>![Image 1](第一篇/Image 1.png)</p>
